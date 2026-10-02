@@ -19,3 +19,32 @@
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:28px}.contact-card{padding:20px 22px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.04);display:flex;flex-direction:column;gap:8px}.contact-card span{font:500 10px/1 'DM Mono',monospace;letter-spacing:.14em;color:#94a5b7}.contact-card strong{font-size:16px;color:#fff}.contact-card small{font-size:11px;color:#8d9bab}.email-placeholder{opacity:.72}
 @media(max-width:850px){.hero-profile{grid-template-columns:170px 1fr}.profile-meta h2{font-size:19px}.contact-grid{grid-template-columns:1fr}}
 @media(max-width:600px){.hero-profile{grid-template-columns:1fr 1fr;align-items:center}.photo-frame{width:100%;max-width:190px}.profile-meta h2{font-size:17px}.hero-profile{gap:14px}}
+
+/* --- photo/profile layout fix --- */
+.hero-profile {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 16px !important;
+  position: relative !important;
+}
+
+.photo-frame {
+  position: relative !important;
+  width: 220px !important;
+  max-width: 100% !important;
+  overflow: hidden !important;
+}
+
+.photo-frame img.photo-placeholder {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  aspect-ratio: 3 / 4 !important;
+  object-fit: cover !important;
+}
+
+.profile-meta {
+  position: static !important;
+  margin-top: 8px !important;
+}
