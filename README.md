@@ -6,5 +6,3 @@ A static one-page cybersecurity portfolio built with HTML, CSS and vanilla JavaS
 - `index.html` — page structure and content
 - `style.css` — complete visual design and responsive layout
 - `script.js` — mobile navigation and expandable project details
-
-
